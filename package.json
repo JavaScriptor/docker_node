@@ -1,0 +1,27 @@
+{
+  "name": "docker_node",
+  "version": "0.0.1",
+  "description": "description",
+  "main": "none",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavaScriptor/docker_node.git"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "test"
+  ],
+  "author": "Scriptor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JavaScriptor/docker_node/issues"
+  },
+  "homepage": "https://github.com/JavaScriptor/docker_node#readme",
+  "devDependencies": {
+    "should": "^7.1.0"
+  }
+}
