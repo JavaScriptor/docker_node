@@ -23,5 +23,6 @@ TODO:
 4. 在项目中增加nginx负载均衡配置，并测试nginx+docker负载均衡可用；
 5. 测试并发、对比单独的http-server的并发、对比nginx+pm2的并发；
 6. 提升部署效率，评估是否可以推广；
+7. 使用监控宝监控docker运行状态；
 
 
