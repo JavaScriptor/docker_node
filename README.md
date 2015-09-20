@@ -8,5 +8,20 @@ docker 是client+host的结构，其中host只能运行在linux内核中，在ox
 - 第一步，从[daocloud](http://get.daocloud.io/)下载Docker ToolBox。安装完成以后可以使用（已经自带了vm和镜像）。
 - 第二步，找一个node环境的docker镜像，执行docker search node, 发现第一个node镜像，执行docker pull node，把镜像拖到本地。
 - 第三步，运行docker，`docker run -i -t node /bin/bash`。
+- 第四步，[在镜像环境中]拿到的是一个ubuntu的裸系统+node环境，先更新，执行apt-get update。
+- 第五步，[在镜像环境中]apt-get install vim。
+- 第六步，[在镜像外]docker commit af12a9781d1f node_and_vim，形成一个自己的镜像，该镜像同时带有node和vim；在docker images中查看。
+- 第七步，在docker镜像中手写一个简单的node-httpserver，见文件server.js。
+- 第八步，目前有点问题，从[这里](http://yangrong.blog.51cto.com/6945369/1582184)看到端口映射后台启动，但是不知道在哪里。具体命令 'docker run -h "node-server1" -p 3003:3000 -d server /usr/local/bin/node'
+
+
+TODO: 
+
+1. 研究docker端口映射启动，并测试可用；
+2. docker image中写好启动脚本；
+3. 在项目中添加批量启动docker的脚本;
+4. 在项目中增加nginx负载均衡配置，并测试nginx+docker负载均衡可用；
+5. 测试并发、对比单独的http-server的并发、对比nginx+pm2的并发；
+6. 提升部署效率，评估是否可以推广；
 
 
