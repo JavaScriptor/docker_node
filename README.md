@@ -13,6 +13,7 @@ docker 是client+host的结构，其中host只能运行在linux内核中，在ox
 - 第六步，[在镜像外]docker commit af12a9781d1f node_and_vim，形成一个自己的镜像，该镜像同时带有node和vim；在docker images中查看。
 - 第七步，在docker镜像中手写一个简单的node-httpserver，见文件server.js。
 - 第八步，目前有点问题，从[这里](http://yangrong.blog.51cto.com/6945369/1582184)看到端口映射后台启动，但是不知道在哪里。具体命令 'docker run -h "node-server1" -p 3003:3000 -d server /usr/local/bin/node'
+- 第九步，【找docker run -d以后的进程跑在哪里了，目前ps -ef 和 docker ps、docker images都没找到】。
 
 
 TODO: 
