@@ -1,7 +1,7 @@
 var http = require('http');
 
 var server = http.createServer(function(req, res) {
-  res.end('hello i am [' + process.pid + ']');
+  res.end('Hello, my process.id is [' + process.pid + ']');
 });
 
 server.listen(3003);
