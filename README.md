@@ -14,17 +14,17 @@ docker 是client+host的结构，其中host只能运行在linux内核中，在ox
 - 第七步，在docker镜像中手写一个简单的node-httpserver，见文件server.js。
 - 第八步，目前有点问题，从[这里](http://yangrong.blog.51cto.com/6945369/1582184)看到端口映射后台启动，但是不知道在哪里。具体命令 'docker run -h "node-server1" -p 3003:3000 -d server /usr/local/bin/node'
 - 第九步，【找docker run -d以后的进程跑在哪里了，目前ps -ef 和 docker ps、docker images都没找到】。
+1. 研究docker端口映射启动，并测试可用； 今天要搞定。
 
 
 TODO: 
 
-1. 研究docker端口映射启动，并测试可用；
 2. docker image中写好启动脚本；
 3. 在项目中添加批量启动docker的脚本;
 4. 在项目中增加nginx负载均衡配置，并测试nginx+docker负载均衡可用；
 5. 测试并发、对比单独的http-server的并发、对比nginx+pm2的并发；
 6. 提升部署效率，评估是否可以推广；
 7. 使用监控宝监控docker运行状态；
-8. 研究《Docker容器与容器云》浙大SEL实验室的书。
+8. 研究《Docker容器与容器云》浙大SEL实验室的书；
 9. Rreact.js 开发前端组件并研究与docker分布式系统的组合使用(避免冲突，目前觉得冲突可能性小，分布与前端组件没有直接关系，可以总结一些适用于分布式系统的组件设计)。
 
