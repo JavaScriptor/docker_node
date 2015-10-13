@@ -18,7 +18,7 @@ docker 是client+host的结构，其中host只能运行在linux内核中，在ox
 
 TODO: 
 
-1. 研究docker端口映射启动，并测试可用，(50%)；
+1. 研究docker端口映射启动，并测试可用，(80%)；
 1. docker image中写好启动脚本；
 1. 在项目中添加批量启动docker的脚本;
 1. 在项目中增加nginx负载均衡配置，并测试nginx+docker负载均衡可用；
