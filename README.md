@@ -1,6 +1,8 @@
 # docker_node
 docker部署node实践
 
+> 测试css
+
 docker 是client+host的结构，其中host只能运行在linux内核中，在oxs上安装需要有虚拟机来运行这个host实例。应该也可以指定远程host，指定完成以后docker就能search、pull镜像了。
 
 - ~~第一步，安装osx docker,似乎比较麻烦。[使用proxychains+socks5能搞定]~~
